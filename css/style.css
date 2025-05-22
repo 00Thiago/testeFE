@@ -1,0 +1,98 @@
+:root {
+    --background: lightblue;
+    --header-hight: 70px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    color: darkblue;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background);
+}
+
+section {
+    height: calc(100vh - var(--header-hight));
+    /* height: 100vh; */
+    scroll-margin-top: calc(var(--header-hight));
+}
+
+footer {
+    background-color: darkslategrey;
+    color: lightblue;
+    text-align: right;
+    font-size: 10pt;
+    padding: 15px;
+}
+
+section#quatro {
+    background-image: url("/imgs/images.jpeg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+section#dois, section#quatro{
+    background-color: lightgreen;
+}
+
+header {
+    background-color: blueviolet;
+    color: white;
+    position: sticky;
+    top: 0pt;
+}
+
+header>nav>ul {
+    text-align: right;
+}
+
+header>nav>ul>li {
+    display: inline-block;
+    padding-right: 20px;
+    margin-top: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+a:link {
+    color: salmon;
+    text-decoration: none;
+}
+
+a:visited{
+    color: salmon;
+    text-decoration: none;
+}
+
+a:hover{
+    color: green;
+    text-decoration: underline;
+}
+
+a:active{
+    color: green;
+    text-decoration: underline;
+    background-color: violet;
+}
+
+.float{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: lightslategray;
+    border-radius: 50px;
+}
